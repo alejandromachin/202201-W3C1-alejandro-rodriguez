@@ -1,4 +1,4 @@
-const { default: Personaje } = require("./Personaje");
+import Personaje from "./Personaje.js";
 
 export class Luchador extends Personaje {
   arma;
@@ -8,10 +8,18 @@ export class Luchador extends Personaje {
     nombreLuchador,
     familiaLuchador,
     edadLuchador,
+    className,
+    parentElement,
     armaLuchador,
     valorDestreza
   ) {
-    super(nombreLuchador, familiaLuchador, edadLuchador);
+    super(
+      nombreLuchador,
+      familiaLuchador,
+      edadLuchador,
+      className,
+      parentElement
+    );
     this.arma = armaLuchador;
     this.destreza = this.filtraDestreza(valorDestreza);
   }
@@ -38,4 +46,15 @@ export const daenerys = new Luchador(
   30,
   "Dragones",
   10
+);
+const cardContainer = document.querySelector(".card-container");
+
+const prueba2 = new Luchador(
+  "Daenerys",
+  "Targaryen",
+  30,
+  "Dragones",
+  10,
+  "card character__card",
+  cardContainer
 );

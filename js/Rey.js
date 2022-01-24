@@ -1,4 +1,4 @@
-const { default: Personaje } = require("./Personaje");
+import Personaje from "./Personaje.js";
 
 export class Rey extends Personaje {
   anyosReinado;

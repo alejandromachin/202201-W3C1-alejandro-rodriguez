@@ -1,6 +1,5 @@
 import { jaime, Luchador } from "./Luchador.js";
-
-const { default: Personaje } = require("./Personaje.js");
+import Personaje from "./Personaje.js";
 
 export class Escudero extends Personaje {
   sirveA;

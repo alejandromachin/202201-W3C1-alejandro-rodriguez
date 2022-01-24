@@ -1,6 +1,5 @@
 import { daenerys } from "./Luchador.js";
-
-const { default: Personaje } = require("./Personaje");
+import Personaje from "./Personaje.js";
 
 export class Asesor extends Personaje {
   asesorado;
