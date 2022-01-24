@@ -1,8 +1,3 @@
-// import { daenerys, jaime } from "./Luchador.js";
-// import { bronn } from "./Escudero.js";
-// import { tyrion } from "./Asesor.js";
-// import { joffrey } from "./Rey.js";
-
 export default class Personaje {
   element;
   nombre;
@@ -35,20 +30,18 @@ export default class Personaje {
     <div class="character__info">
     <ul class="list-unstyled">
     <li>Edad ${edadPersonaje} años</li>
-    <i>Estado: <i class="fas fa-thumbs-down"><i>
-    <i>Estado: <i class="fas fa-thumbs-up"><i>
-    </li></ul></div>
+    <li>Estado: <i class="fas fa-thumbs-down"><i>
+    <i class="fas fa-thumbs-up"><i></li>
+    </ul></div>
     <div class="character__overlay">
     <div class="character__actions">
     <button class="character__action btn">habla</button>
     <button class="character__action btn">muere</button>
     </div>
     </div>
-    </div>
     <i class="emoji"></i>
     </div>
-    </li>
-
+   
     `;
   }
 
@@ -60,24 +53,12 @@ export default class Personaje {
     this.vivo = false;
   }
 }
-// const personajesGoT = [jaime, daenerys, bronn, tyrion, joffrey];
 const cardContainer = document.querySelector(".card-container");
 
 const prueba = new Personaje(
   "Joffrey",
   "Baratheon",
   31,
-  "card character__card",
-  cardContainer
-);
-
-const prueba2 = new Luchador(
-  "Daenerys",
-  "Targaryen",
-  30,
-
-  "Dragones",
-  10,
   "card character__card",
   cardContainer
 );

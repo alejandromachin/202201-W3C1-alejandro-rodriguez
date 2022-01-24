@@ -1,7 +1,6 @@
-// eslint-disable-next-line import/no-cycle
-import { Personaje } from "./Personaje.js";
+import Personaje from "./Personaje.js";
 
-export default class Luchador extends Personaje {
+export class Luchador extends Personaje {
   arma;
   destreza;
 
@@ -9,10 +8,18 @@ export default class Luchador extends Personaje {
     nombreLuchador,
     familiaLuchador,
     edadLuchador,
+    className,
+    parentElement,
     armaLuchador,
     valorDestreza
   ) {
-    super(nombreLuchador, familiaLuchador, edadLuchador);
+    super(
+      nombreLuchador,
+      familiaLuchador,
+      edadLuchador,
+      className,
+      parentElement
+    );
     this.arma = armaLuchador;
     this.destreza = this.filtraDestreza(valorDestreza);
   }
@@ -32,11 +39,22 @@ export default class Luchador extends Personaje {
   }
 }
 
-// export const jaime = new Luchador("Jaime", "Lannister", 45, "Espada", 7);
-// export const daenerys = new Luchador(
-//   "Daenerys",
-//   "Targaryen",
-//   30,
-//   "Dragones",
-//   10
-// );
+export const jaime = new Luchador("Jaime", "Lannister", 45, "Espada", 7);
+export const daenerys = new Luchador(
+  "Daenerys",
+  "Targaryen",
+  30,
+  "Dragones",
+  10
+);
+const cardContainer = document.querySelector(".card-container");
+
+const prueba2 = new Luchador(
+  "Daenerys",
+  "Targaryen",
+  30,
+  "Dragones",
+  10,
+  "card character__card",
+  cardContainer
+);
