@@ -1,18 +1,18 @@
-// import { daenerys } from "./Luchador.js";
+import { daenerys } from "./Luchador.js";
 
-// const { default: Personaje } = require("./Personaje");
+const { default: Personaje } = require("./Personaje");
 
-// export class Asesor extends Personaje {
-//   asesorado;
-//   constructor(nombreAsesor, familiaAsesor, edadAsesor, personajeAsesorado) {
-//     super(nombreAsesor, familiaAsesor, edadAsesor);
-//     if (personajeAsesorado instanceof Personaje) {
-//       this.asesorado = personajeAsesorado;
-//     }
-//   }
+export default class Asesor extends Personaje {
+  asesorado;
+  constructor(nombreAsesor, familiaAsesor, edadAsesor, personajeAsesorado) {
+    super(nombreAsesor, familiaAsesor, edadAsesor);
+    if (personajeAsesorado instanceof Personaje) {
+      this.asesorado = personajeAsesorado;
+    }
+  }
 
-//   comunicar() {
-//     return `${super.comunicar()}No sé por qué, pero creo que voy a morir pronto`;
-//   }
-// }
+  comunicar() {
+    return `${super.comunicar()}No sé por qué, pero creo que voy a morir pronto`;
+  }
+}
 // export const tyrion = new Asesor("Tyrion", "Lannister", 40, daenerys);

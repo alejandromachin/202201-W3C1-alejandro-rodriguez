@@ -71,4 +71,13 @@ const prueba = new Personaje(
   cardContainer
 );
 
-console.log(prueba);
+const prueba2 = new Luchador(
+  "Daenerys",
+  "Targaryen",
+  30,
+
+  "Dragones",
+  10,
+  "card character__card",
+  cardContainer
+);
