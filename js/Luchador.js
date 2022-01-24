@@ -30,3 +30,5 @@ class Luchador extends Personaje {
     return `${super.comunicar()}Primero pego y luego pregunto`;
   }
 }
+
+export default const jaime = new Luchador("Jaime", "Lannister", 45, "Espada", 7);
