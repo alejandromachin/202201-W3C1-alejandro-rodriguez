@@ -13,4 +13,4 @@ class Asesor extends Personaje {
     return `${super.comunicar()}No sé por qué, pero creo que voy a morir pronto`;
   }
 }
-const tyrion = new Asesor("Tyrion", "Lannister", 40, daenerys);
+export default const tyrion = new Asesor("Tyrion", "Lannister", 40, daenerys);
