@@ -1,7 +1,7 @@
-import { daenerys, jaime } from "./Luchador.js";
-import { bronn } from "./Escudero.js";
-import { tyrion } from "./Asesor.js";
-import { joffrey } from "./Rey.js";
+// import { daenerys, jaime } from "./Luchador.js";
+// import { bronn } from "./Escudero.js";
+// import { tyrion } from "./Asesor.js";
+// import { joffrey } from "./Rey.js";
 
 export default class Personaje {
   element;
@@ -15,7 +15,6 @@ export default class Personaje {
     nombrePersonaje,
     familiaPersonaje,
     edadPersonaje,
-
     className,
     parentElement
   ) {
@@ -26,17 +25,16 @@ export default class Personaje {
     this.nombre = nombrePersonaje;
     this.familia = familiaPersonaje;
     this.edad = edadPersonaje;
-    this.generateHTML();
+    this.generateHTML(nombrePersonaje, familiaPersonaje, edadPersonaje);
   }
 
-  generateHTML() {
-    this.element.innerHTML = `
-    <img src="${this.nombrePersonaje}.jpg alt="${this.nombrePersonaje} y ${this.familiaPersonaje}" class="character__picture card-img-top">
-    <div class="card-body">
-    <h2 class="character__name card-tittle h4">${this.nombrePersonaje} ${this.familiaPersonaje}</h2>
+  generateHTML(nombrePersonaje, familiaPersonaje, edadPersonaje) {
+    this.element.innerHTML = `<img src="/img/${nombrePersonaje}.jpg" alt="${nombrePersonaje} y ${familiaPersonaje}" class="character__picture card-img-top">
+      <div class="card-body">
+    <h2 class="character__name card-tittle h4">${nombrePersonaje} ${familiaPersonaje}</h2>
     <div class="character__info">
     <ul class="list-unstyled">
-    <li>Edad ${this.edadPersonaje} años</li>
+    <li>Edad ${edadPersonaje} años</li>
     <i>Estado: <i class="fas fa-thumbs-down"><i>
     <i>Estado: <i class="fas fa-thumbs-up"><i>
     </li></ul></div>
@@ -62,12 +60,15 @@ export default class Personaje {
     this.vivo = false;
   }
 }
-const personajesGoT = [jaime, daenerys, bronn, tyrion, joffrey];
+// const personajesGoT = [jaime, daenerys, bronn, tyrion, joffrey];
+const cardContainer = document.querySelector(".card-container");
 
 const prueba = new Personaje(
-  "alejandro",
-  "rodriguez",
+  "Joffrey",
+  "Baratheon",
   31,
   "card character__card",
-  "card-container"
+  cardContainer
 );
+
+console.log(prueba);
