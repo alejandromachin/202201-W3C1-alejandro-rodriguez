@@ -31,4 +31,11 @@ class Luchador extends Personaje {
   }
 }
 
-export default const jaime = new Luchador("Jaime", "Lannister", 45, "Espada", 7);
+export const jaime = new Luchador("Jaime", "Lannister", 45, "Espada", 7);
+export const daenerys = new Luchador(
+  "Daenerys",
+  "Targaryen",
+  30,
+  "Dragones",
+  10
+);
