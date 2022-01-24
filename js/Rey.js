@@ -1,6 +1,6 @@
 const { default: Personaje } = require("./Personaje");
 
-class Rey extends Personaje {
+export class Rey extends Personaje {
   anyosReinado;
 
   constructor(nombreRey, familiaRey, edadRey, anyosReinadoRey) {
@@ -13,6 +13,4 @@ class Rey extends Personaje {
   }
 }
 
-const joffrey = new Rey("Joffrey", "Baratheon", 16, 2);
-
-export default { joffrey };
+export const joffrey = new Rey("Joffrey", "Baratheon", 16, 2);

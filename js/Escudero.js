@@ -2,7 +2,7 @@ import { jaime, Luchador } from "./Luchador.js";
 
 const { default: Personaje } = require("./Personaje.js");
 
-class Escudero extends Personaje {
+export class Escudero extends Personaje {
   sirveA;
   pelotismo;
 
@@ -35,5 +35,4 @@ class Escudero extends Personaje {
   }
 }
 
-const bronn = new Escudero("Bronn", "AguasNegras", 54, 0, jaime);
-export default { bronn };
+export const bronn = new Escudero("Bronn", "AguasNegras", 54, 0, jaime);
