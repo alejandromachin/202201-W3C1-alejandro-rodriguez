@@ -12,4 +12,7 @@ class Rey extends Personaje {
     return `${super.comunicar()}Vais a morir todos`;
   }
 }
-export default const joffrey = new Rey("Joffrey", "Baratheon", 16, 2);
+
+const joffrey = new Rey("Joffrey", "Baratheon", 16, 2);
+
+export default { joffrey };

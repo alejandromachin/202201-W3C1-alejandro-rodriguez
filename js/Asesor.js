@@ -1,3 +1,5 @@
+import { daenerys } from "./Luchador.js";
+
 const { default: Personaje } = require("./Personaje");
 
 class Asesor extends Personaje {
@@ -13,4 +15,5 @@ class Asesor extends Personaje {
     return `${super.comunicar()}No sé por qué, pero creo que voy a morir pronto`;
   }
 }
-export default const tyrion = new Asesor("Tyrion", "Lannister", 40, daenerys);
+const tyrion = new Asesor("Tyrion", "Lannister", 40, daenerys);
+export default { tyrion };

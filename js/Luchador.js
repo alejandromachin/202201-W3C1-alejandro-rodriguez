@@ -1,6 +1,6 @@
 const { default: Personaje } = require("./Personaje");
 
-class Luchador extends Personaje {
+export class Luchador extends Personaje {
   arma;
   destreza;
 
