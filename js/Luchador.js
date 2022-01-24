@@ -1,4 +1,4 @@
-const { default: Personaje } = require("./Personaje");
+import Personaje from "./Personaje.js";
 
 export class Luchador extends Personaje {
   arma;

@@ -2,6 +2,12 @@ body {
   background-color: #b9540c;
   overflow: hidden;
 }
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 .characters-list {
   flex-wrap: nowrap;
   max-width: 100%;
