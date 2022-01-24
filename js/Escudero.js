@@ -32,3 +32,4 @@ class Escudero extends Personaje {
     return `${super.comunicar()}Soy un loser`;
   }
 }
+const bronn = new Escudero("Bronn", "AguasNegras", 54, 0, jaime);
