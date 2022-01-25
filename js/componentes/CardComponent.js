@@ -3,6 +3,7 @@ import { Escudero } from "../Escudero.js";
 import { Luchador } from "../Luchador.js";
 import { Rey } from "../Rey.js";
 import Component from "./Component.js";
+import ButtonComponent from "./ButtonComponent.js";
 
 export default class CardComponent extends Component {
   tipo;
@@ -44,14 +45,11 @@ export default class CardComponent extends Component {
                 <ul class="list-unstyled">
                 </ul>
                 <div class="character__actions">
-                  <button class="character__action btn">habla</button>
-                  <button class="character__action btn">muere</button>
+                 
                 </div>
               </div>
             </div>
             <i class="emoji"></i>`;
-    // const imatge = new Image(asdasd);
-    // imatge.append("nomb");
   }
 
   typeOf(element) {
