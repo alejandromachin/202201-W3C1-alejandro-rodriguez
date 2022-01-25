@@ -6,7 +6,7 @@ export class Asesor extends Personaje {
   constructor(nombreAsesor, familiaAsesor, edadAsesor, personajeAsesorado) {
     super(nombreAsesor, familiaAsesor, edadAsesor);
     if (personajeAsesorado instanceof Personaje) {
-      this.asesorado = personajeAsesorado;
+      this.asesorado = personajeAsesorado.nombre;
     }
   }
 

@@ -8,18 +8,10 @@ export class Luchador extends Personaje {
     nombreLuchador,
     familiaLuchador,
     edadLuchador,
-    className,
-    parentElement,
     armaLuchador,
     valorDestreza
   ) {
-    super(
-      nombreLuchador,
-      familiaLuchador,
-      edadLuchador,
-      className,
-      parentElement
-    );
+    super(nombreLuchador, familiaLuchador, edadLuchador);
     this.arma = armaLuchador;
     this.destreza = this.filtraDestreza(valorDestreza);
   }
