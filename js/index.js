@@ -37,6 +37,12 @@ for (let i = 0; i < personajes.length; i++) {
         personajes[i].nombre,
         personajes[i].familia
       );
+
+      const saludoDesplegado = document.querySelector(".comunications");
+      console.log(saludoDesplegado);
+      saludoDesplegado.addEventListener("click", () => {
+        console.log("hola");
+      });
     }
   );
   const buttonMuere = new ButtonComponent(
