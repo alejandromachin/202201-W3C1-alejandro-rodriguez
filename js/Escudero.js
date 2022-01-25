@@ -15,7 +15,7 @@ export class Escudero extends Personaje {
     super(nombreEscudero, familiaEscudero, edadEscudero);
     this.pelotismo = this.filtrarPelotismo(valorPelotismo);
     if (personajeSirve instanceof Luchador) {
-      this.sirveA = personajeSirve;
+      this.sirveA = personajeSirve.nombre;
     }
   }
 
