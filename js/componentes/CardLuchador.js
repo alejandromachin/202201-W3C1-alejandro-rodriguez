@@ -15,6 +15,6 @@ export default class CardLuchador extends CardComponent {
       ".character__overlay .list-unstyled"
     );
 
-    listaAcciones.innerHTML = `<li>Arma: ${this.arma}</li>`;
+    listaAcciones.innerHTML = `<li></li>`;
   }
 }
