@@ -1,6 +1,6 @@
 import Component from "./Component.js";
 
-class CardComponent extends Component {
+export default class CardComponent extends Component {
   constructor(parentElement, className) {
     super(parentElement, className, "div");
     this.generateHTML();

@@ -47,14 +47,3 @@ export const daenerys = new Luchador(
   "Dragones",
   10
 );
-const cardContainer = document.querySelector(".card-container");
-
-const prueba2 = new Luchador(
-  "Daenerys",
-  "Targaryen",
-  30,
-  "Dragones",
-  10,
-  "card character__card",
-  cardContainer
-);

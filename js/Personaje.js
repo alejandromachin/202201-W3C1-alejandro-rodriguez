@@ -53,12 +53,3 @@ export default class Personaje {
     this.vivo = false;
   }
 }
-const cardContainer = document.querySelector(".card-container");
-
-const prueba = new Personaje(
-  "Joffrey",
-  "Baratheon",
-  31,
-  "card character__card",
-  cardContainer
-);
