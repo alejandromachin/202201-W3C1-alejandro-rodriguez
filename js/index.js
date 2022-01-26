@@ -49,7 +49,11 @@ for (let i = 0; i < personajes.length; i++) {
     characterOverlay,
     "character__action btn",
     "Muere",
-    () => {}
+    () => {
+      const listaAGirar = document.querySelector(".character");
+      listaAGirar.classList = "character col rotated";
+      console.log(listaAGirar);
+    }
   );
 }
 
